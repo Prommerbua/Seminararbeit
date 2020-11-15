@@ -1,28 +1,3 @@
-%
-% FH Technikum Wien
-% !TEX encoding = UTF-8 Unicode
-%
-% Erstellung von Master- und Bachelorarbeiten an der FH Technikum Wien mit Hilfe von LaTeX und der Klasse TWBOOK
-%
-% Um ein eigenes Dokument zu erstellen, müssen Sie folgendes ergänzen:
-% 1) Mit \documentclass[..] einstellen: Master- oder Bachelorarbeit, Studiengang und Sprache
-% 2) Mit \newcommand{\FHTWCitationType}.. Zitierstandard festlegen (wird in der Regel vom Studiengang vorgegeben - bitte erfragen)
-% 3) Deckblatt, Kurzfassung, etc. ausfüllen
-% 4) und die Arbeit schreiben (die verwendeten Literaturquellen in Literatur.bib eintragen)
-%
-% Getestet mit TeXstudio mit Zeichenkodierung ISO-8859-1 (=ansinew/latin1) und MikTex unter Windows
-% Zu beachten ist, dass die Kodierung der Datei mit der Kodierung des paketes inputenc zusammen passt!
-% Die Kodierung der Datei twbook.cls MUSS ANSI betragen!
-% Bei der Verwendung von UTF8 muss dnicht nur die Kodierung des Dokuments auf UTF8 gestellt sein, sondern auch die des BibTex-Files!
-%
-% Bugreports und Feedback bitte per E-Mail an latex@technikum-wien.at 
-%
-% Versionen
-% *) V0.7: 9.1.2015, RO: Modeline angepasst und verschoben
-% *) V0.6: 10.10.2014, RO: Weitere Anpassung an die UK
-% *) V0.5: 8.8.2014, WK: Literaturquellen überarbeitet und angepasst
-% *) V0.4: 4.8.2014, WK: Initalversion in SVN eingespielt
-%
 \documentclass[MGS,Seminar,ngerman]{twbook}%\documentclass[Bachelor,BMR,ngerman]{twbook}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -63,7 +38,6 @@
 
 % Die nachfolgenden Pakete stellen sonst nicht benötigte Features zur Verfügung
 \usepackage{blindtext}
-
 %
 % Einträge für Deckblatt, Kurzfassung, etc.
 %
@@ -144,28 +118,18 @@
 %
 % .. und hier beginnt die eigentliche Arbeit. Viel Erfolg beim Verfassen!
 %
-\chapter{Erste Überschrift der Ebene 1 (chapter)}
 
 \input{kapitel1.tex}
 
-\section{Erste Überschrift Tiefe 2 (section)}
 
-\subsection{Erste Überschrift Tiefe 3 (subsection)}
 
-\subsubsection{Erste Überschrift Tiefe 4 (subsubsection)}
+\chapter{Kapitel 2}
 
-\chapter{Zweite Überschrift der Tiefe 1 (chapter)}
+\section{unterkapitel 2.1}
 
-\section{Zweite Überschrift Tiefe 2 (section)}
+\section{unterkapitel 2.2}
 
-\section{Zweite Überschrift Tiefe 2 (section)}
-
-\subsection{Zweite Überschrift Tiefe 3 (subsection)}
-
-\subsection{Dritte Überschrift Tiefe 3 (subsection)}
-
-\subsubsection{Zweite Überschrift Tiefe 4 (subsubsection)}
-
+\chapter{Fazit}
 
 
 
