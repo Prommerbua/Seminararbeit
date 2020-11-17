@@ -1,7 +1,9 @@
 \chapter{State of the Art}
 
 
-\section{Voronoi Diagramm}
+\section{Nicht Physikalisch basierte Methoden}
+
+Wie schon bereits erwähnt wird in den nicht physikalisch basierten Methoden meist auf das Voronoi Diagramm zurückgegriffen. 
 
 Ausgehend von einer endlichen Menge an verschiedenen, isolierten Punkten in einem Raum, werden alle Orte mit dem nächstgelegenen Punkt der Punktmenge assoziiert.
 Das Ergebnis ist eine Unterteilung des Raumes in eine Menge von Regionen, die sogenannten Voronoi Zellen, die zusammen das Voronoi Diagramm bilden, 
@@ -43,5 +45,12 @@ genralized in a variety of ways (chapter 3 in okabe)
 data structures to represent voronoi (chapter 4)
 
 
-\section{Volumetric Approximate Convex Decompositions}
+\section{Physikalisch basierte Methoden}
+
+\subsection{Mass-Spring Model}
+
+Diese Technik basiert darauf, dass bestimmte Punkte eines 3D-Objektes mit Federn miteinander verbunden sind und entfernt werden, wenn diese einer bestimmten Belastung
+ausgesetzt sind. Diese Belastung basiert auf einer bestimmten Schwelle die abhängig ist von der Länge der Feder und des Materials des 3D-Objektes. 
+
+\subsection{Finite element methods}
 

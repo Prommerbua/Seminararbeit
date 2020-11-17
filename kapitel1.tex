@@ -2,14 +2,20 @@
 
 In modernen Videospielen und Filmen werden verschiedenste Effekte verwendet um dem Spieler die Welt glaubhafter und realer wirken zu lassen.
 Einer davon ist die Zerstörung von unterschiedlichen Objekten im Spiel wie einfache Gegenstände oder in manchen Spielen sogar zerstörbare Landschaften.
-Aufgrund des hohen Rechenaufwands wird in Spielen jedoch meist ein statischer Ansatz für solch destruktive Objekte verwendet, das heißt ein Model wird von einem Artist 
-bereits vorher fragmentiert modelliert und zum gewünschten Zeitpunkt im Spiel einfach ausgetauscht. Dieser Ansatz hat jedoch auch Nachteile. 
-Zum Beispiel wird die Entwicklungszeit eines Spieles verlängert, da der Artist 3D-Modelle mit unterschiedlichen Frakturierungen erstellen muss,
-und zusätzlich kann es sein, dass die Spielerinteraktion in der Spielumgebung durch vorgebrochene Objekte einteschränkt wird \cite{Najim.DynamicFracturing}.
+Aufgrund des hohen Rechenaufwands wird in Spielen jedoch meist ein statischer und nicht physikalischer Ansatz für solch destruktive Objekte verwendet, 
+das heißt ein Model wird von einem Artist bereits vorher fragmentiert modelliert und zum gewünschten Zeitpunkt im Spiel einfach ausgetauscht. 
+Dieser Ansatz hat jedoch auch Nachteile. Zum Beispiel wird die Entwicklungszeit eines Spieles verlängert, da der Artist 3D-Modelle mit 
+unterschiedlichen Frakturierungen erstellen muss, und zusätzlich kann es sein, dass die Spielerinteraktion in der Spielumgebung durch 
+vorgebrochene Objekte einteschränkt wird \cite{Najim.DynamicFracturing}.
 Außerdem hat diese Methode den Nachteil, dass das Muster der Fragmentierung nicht mit der Einschlagstelle übereinstimmt und dass die Anzahl der 
-hierarchischen Burchstufen bereits festgelegt ist \cite{Mueller.RealTimeDynamicFractureVACD}.
+hierarchischen Burchstufen bereits festgelegt ist \cite{Mueller.RealTimeDynamicFractureVACD}. Um eine physikalisch korrekte Fragmentierung zu erhalten, muss man 
+auch auf physikalisch basierte Methoden zurückgreifen. Mithilfe dieser Methoden ist es zwar möglich realistische Simulationen durchzuführen, doch aufgrund des hohen
+Rechenaufwandes sind diese Methoden meist nicht für interraktive Programme, wie beispielsweise Videospiele, anwendbar \cite{Torres.FractureModelingSurvey}.
+Aber aufgrund von intensiver Forschung von physikalischen Methoden, ist es mittlerweile sogar möglich einige dieser Methoden in Echtzeit auszuführen wie beispielsweise
+Parker und O'Brien \cite{Parker.Real-TimeDeformation} oder Levine et al \cite{Levine.PeridynamicSpringMass} zeigen.
 
-Durch bisherige Bemühungen auf diesem Gebiet konnten Algorithmen entwickelt werden, welche in Echtzeit ausgeführt werden können und dadurch
-einen dynamischeren Effekt erzielen. Dadurch können beispielsweise interessantere und nicht repetitive Fragmentierungsmuster erstellt werden und außerdem fällt die 
+Durch bisherige Bemühungen auf diesem Gebiet konnten nicht physikalisch basierte Algorithmen entwickelt werden, welche in Echtzeit ausgeführt werden, ein 
+realischtisches Ergebnis erzielen und dadurch einen dynamischeren Effekt erzielen. 
+Deshalb können beispielsweise interessantere und nicht repetitive Fragmentierungsmuster erstellt werden und außerdem fällt die 
 Entwicklungszeit der 3D-Modellen mit unterschiedlichen Frakturierungen weg.
-Diese Algorithmen zur Erstellung von Fragmentierungen basieren beispielsweise auf dem Voronoi Diagramm.
+Diese Algorithmen zur Erstellung von Fragmentierungen basieren meist auf dem sogenannten Voronoi Diagramm.

@@ -41,15 +41,30 @@
   abstract = {We present a method for generating surface crack patterns that appear in materials such as mud, ceramic glaze, and glass. To model these phenomena, we build upon existing physically based methods. Our algorithm generates cracks from a stress field defined heuristically over a triangle discretization of the surface. The simulation produces cracks by evolving this field over time. The user can control the characteristics and appearance of the cracks using a set of simple parameters. By changing these parameters, we have generated examples similar to a variety of crack patterns found in the real world. We assess the realism of our results by comparison with photographs of real-world examples. Using a physically based approach also enables us to generate animations similar to time-lapse photography.}
 },
 
+@inproceedings{Levine.PeridynamicSpringMass,
+  author    = {Levine, J. A. and Bargteil, A. W. and Corsi, C. and Tessendorf, J. and Geist, R.},
+  title     = {A Peridynamic Perspective on Spring-Mass Fracture},
+  year      = {2015},
+  publisher = {Eurographics Association},
+  address   = {Goslar, DEU},
+  abstract  = {The application of spring-mass systems to the animation of brittle fracture is revisited. The motivation arises from the recent popularity of peridynamics in the computational physics community. Peridynamic systems can be regarded as spring-mass systems with two specific properties. First, spring forces are based on a simple strain metric, thereby decoupling spring stiffness from spring length. Second, masses are connected using a distance-based criterion. The relatively large radius of influence typically leads to a few hundred springs for every mass point. Spring-mass systems with these properties are shown to be simple to implement, trivially parallelized, and well-suited to animating brittle fracture.},
+  booktitle = {Proceedings of the ACM SIGGRAPH/Eurographics Symposium on Computer Animation},
+  pages     = {47–55},
+  numpages  = {9},
+  location  = {Copenhagen, Denmark},
+  series    = {SCA '14},
+  date      = {July}
+},
+
 @article{Mueller.RealTimeDynamicFractureVACD,
-author = {Müller, Matthias and Chentanez, Nuttapong and Kim, Tae},
-year = {2013},
-month = {07},
-pages = {},
-title = {Real Time Dynamic Fracture with Volumetric Approximate Convex Decompositions},
-volume = {32},
-journal = {ACM Transactions on Graphics},
-doi = {10.1145/2461912.2461934}
+  author  = {Müller, Matthias and Chentanez, Nuttapong and Kim, Tae},
+  year    = {2013},
+  month   = {07},
+  pages   = {},
+  title   = {Real Time Dynamic Fracture with Volumetric Approximate Convex Decompositions},
+  volume  = {32},
+  journal = {ACM Transactions on Graphics},
+  doi     = {10.1145/2461912.2461934}
 },
 
 @inproceedings{Najim.DynamicFracturing,
@@ -92,7 +107,7 @@ doi = {10.1145/2461912.2461934}
   location  = {New Orleans, Louisiana},
   series    = {SCA '09},
   date      = {August}
-},
+}
 
 @inproceedings{Raghavachary.FractureGenerationOnPolygonalMeshes,
   author    = {Raghavachary, Saty},
@@ -111,7 +126,7 @@ doi = {10.1145/2461912.2461934}
   location  = {San Antonio, Texas},
   series    = {SIGGRAPH '02},
   date      = {July}
-}
+},
 
 @inproceedings{Schvartzman.FractureAnimationVoronoi,
   author    = {Schvartzman, Sara and Otaduy, Miguel},
@@ -124,4 +139,12 @@ doi = {10.1145/2461912.2461934}
   date      = {March},
   location  = {San Francisco, California},
   publisher = {Association for Computing Machinery, New York, United States}
+},
+
+@mastersthesis{Torres.FractureModelingSurvey,
+  author = {Lien Muguercia Torres},
+  title  = {Fracture Modeling in Computer Graphics, A survey},
+  school = {Universitat de Girona},
+  year   = {2011},
+  date   = {July}
 }
