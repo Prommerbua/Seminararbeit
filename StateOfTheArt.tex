@@ -67,19 +67,29 @@ den Auftreffpunkt eines herunterfalllenden Gegenstandes genau zu definieren.
 \section{Physikalisch basierte Methoden}
 
 %physikalische Methoden 
+Aufgrund der realistischen Fragmentierung und hohen Berechnungszeit der physikalischen Methoden, werden diese häufig bei Simulationen eingesetzt,
+um akkurate Resultate zu erzielen. Mittlerweile wurden jedoch neue Methoden entwickelt beziehungsweise die bestehenden Methoden erweitert und perfektioniert 
+und finden sich auch in Videospielen wieder. 
 
 \subsection{Mass-Spring Model}
 
 Grundlegend basiert die Technik des Mass-Spring Models darauf, dass bestimmte Punkte eines 3D-Objektes mit Sprungfedern miteinander verbunden sind und entfernt werden, 
 sobald diese einer bestimmten Belastung ausgesetzt sind. 
-Diese Belastung basiert auf einer bestimmten Schwelle die abhängig ist von der Länge der Feder und des Materials des 3D-Objektes. 
-%Dadurch, dass die Belastung teilweise abhängig von dem Material des Objektes ist, entstehen realistische Bruchmuster 
+Diese Belastung basiert auf einer bestimmten Schwelle die abhängig ist von der Länge der Feder und des Materials des 3D-Objektes. Ein Nachteil dieser Methode ist,
+dass die Position und Rotation der Bruchstelle unbekannt ist.
 
-% Problem: loaction and orientation of fracure unknown
+Mazarak et al \cite{Mazarak.AnimatingExplodingObjects} haben diesen Algorithmus erweitert, indem sie einen Voxel basierten Ansatz verwendet haben,
+um solide Objekte zu modellieren. Das bedeutet das Voxel miteinander verbunden sind, und diese Verbindungen starr sind, um benachbarte 
+Voxel stark miteinander verbunden zu halten. 
+Diese verbundenen Voxel können nun zu gemeinsamen Körpern verbunden werden. Anschließend können diese Körper gruppiert werden, um bestimmte Formen oder Objekte zu bilden.
+Eine Fragmentierung wird nun simuliert, indem Verbindungen zwischen den Körpern gebrochen werden.
 
-% voxel based approach 
+\subsection{Finite-Element Methode}
 
+Im Gegensatz zum Mass-Spring Model, welches von diskreter Natur ist, wird die Finite-Element-Methode(FEM) aus den Gleichungen der Kontinuumsmechanik abgeleitet.
+Hauptsächlich wird dabei das Objekt in kleine, miteinander verbundene Bereiche, die sogenannten finiten Elemente, unterteilt. 
+Innerhalb jedes Elements wird das Objekt mithilfe einer Funktion, mit einer endlichen Anzahl an Paramatern, lokal beschrieben. Diese Funktion wird in eine Menge von
+Funktionen mit orthogonaler Form zerlegt, die jeweils einem der Knoten an der Grenze des Elementes zugeordnet sind \cite{OBrien.BrittleFracture}. 
 
-\subsection{Finite element Methode}
-
-\subsection{Meshless Methode}
+Die Finite-Element Methode wird meist bei Simulationen eingesetzt, jedoch ist es Parker und O'Brien \cite{Parker.Real-TimeDeformation} gelungen
+diese Methode in einem Echtzeit Kontext, genauer ausgedrückt in einem kommerziellen Videospiel, anzuwenden.
